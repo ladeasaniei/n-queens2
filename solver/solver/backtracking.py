@@ -1,22 +1,24 @@
 class BacktrackingSolver:
-    def __init__(self, n):
-        self.n = n
-        self.board = [-1] * n
+    def __init__(self, size):
+        self.size = size
+        self.positions = [-1] * size
 
-    def is_safe(self, row, col):
-        for r in range(row):
-            if self.board[r] == col or abs(self.board[r] - col) == abs(r - row):
+    def can_place(self, current_row, candidate_col):
+        for previous_row in range(current_row):
+            if self.positions[previous_row] == candidate_col or \
+               abs(self.positions[previous_row] - candidate_col) == abs(previous_row - current_row):
                 return False
         return True
 
-    def solve(self, row=0):
-        if row == self.n:
-            return self.board[:]
-        for col in range(self.n):
-            if self.is_safe(row, col):
-                self.board[row] = col
-                solution = self.solve(row + 1)
-                if solution:
-                    return solution
-                self.board[row] = -1
+    def find_solution(self, current_row=0):
+        if current_row == self.size:
+            return self.positions[:]
+
+        for candidate_col in range(self.size):
+            if self.can_place(current_row, candidate_col):
+                self.positions[current_row] = candidate_col
+                result = self.find_solution(current_row + 1)
+                if result:
+                    return result
+                self.positions[current_row] = -1
         return None
