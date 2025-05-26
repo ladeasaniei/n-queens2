@@ -1,6 +1,5 @@
 import pygame
 from constants import ROWS, COLS, SQUARE_SIZE, CREAM, BROWN
-from ui.button import draw_text_outline
 from constants import TEXT_COLOR, OUTLINE_COLOR
 from pygame import time
 
