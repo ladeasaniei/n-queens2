@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5629104-25de-4c39-aef8-f6f4a6639615" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,7 @@
       <workItem from="1748132812410" duration="396000" />
       <workItem from="1748133234317" duration="3207000" />
       <workItem from="1748222747323" duration="1429000" />
-      <workItem from="1748224418002" duration="4874000" />
+      <workItem from="1748224418002" duration="5395000" />
     </task>
     <servers />
   </component>
@@ -133,6 +134,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/n_queens$main.coverage" NAME="main Coverage Results" MODIFIED="1748225427711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/n_queens$main.coverage" NAME="main Coverage Results" MODIFIED="1748237105793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
